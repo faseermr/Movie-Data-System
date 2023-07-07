@@ -1,0 +1,14 @@
+.show-entrie-div {
+  height: 25px;
+  /* background-color: blue; */
+  margin-top: 20px;
+}
+
+.show-entrie-select {
+  height: 25px;
+}
+
+.movie-card {
+  width: 47%;
+  margin: 10px;
+}
