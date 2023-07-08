@@ -49,17 +49,28 @@ const initialDbData = () => {
   db.movies.create({
     title: "TestAction1",
     director: "ActionDirector1",
-    release_date: "20/12/2023",
-    summary: "summary 1",
+    release_date: "2023-07-04",
+    summary:
+      "Very good script and nice, Very good script and nice, Very good script and nice, Very good script and nice, Very good script and nice",
     genre_id: 1,
   });
 
   db.movies.create({
     title: "TestComedy1",
     director: "ComedyDirector1",
-    release_date: "08/10/2023",
-    summary: "summary 2",
+    release_date: "2023-07-04",
+    summary:
+      "Very good script and nice, Cast acting was very good, watch in theatre, Very good script and nice, Very good script and nice",
     genre_id: 3,
+  });
+
+  db.movies.create({
+    title: "TestHorror1",
+    director: "HorrorDirector1",
+    release_date: "2023-07-04",
+    summary:
+      "Very good script and nice, Cast acting was very good, watch in theatre, Very good script and nice, Very good script and nice",
+    genre_id: 4,
   });
 };
 
@@ -67,7 +78,7 @@ db.sequelize
   .sync({ force: false })
   .then(() => {
     console.log("Synced db correctly");
-    // initialDbData();
+    initialDbData();
   })
   .catch((err) => {
     console.log("Failed to sync db: " + err.message);

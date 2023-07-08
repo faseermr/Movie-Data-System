@@ -52,30 +52,24 @@ const SingleMovieCard: React.FC<PropType> = ({
         <div className="row">
           <div className="col">
             {" "}
-            <label className=" border-bottom border-2 border-warning fw-bold">
-              Director:
-            </label>
+            <label className=" fw-bold">Director:</label>
             <p>{movie.director}</p>
+            <hr />
           </div>
           <div className="col">
-            <label className=" border-bottom border-2 border-warning fw-bold">
-              Genre:
-            </label>
-            <p>{movie.movie_genres.name}</p>{" "}
+            <label className="fw-bold">Genre:</label>
+            <p>{movie.movie_genres.name}</p> <hr />
           </div>
           <div className="col">
-            <label className=" border-bottom border-2 border-warning fw-bold">
-              Release Date:
-            </label>
-            <p>{movie.release_date}</p>{" "}
+            <label className="fw-bold">Release Date:</label>
+            <p>{movie.release_date}</p> <hr />
           </div>
         </div>
         <div className="row">
           <div className="col">
-            <label className=" border-bottom border-2 border-warning fw-bold">
-              Summary:
-            </label>
+            <label className="fw-bold">Summary:</label>
             <p>{movie.summary}</p>
+            <hr />
           </div>
         </div>
       </div>
